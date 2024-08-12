@@ -7,6 +7,10 @@
   font-weight: 600;
 }
 
+#one hr {
+  opacity: 0.3;
+}
+
 .nav {
   max-width: 1400px;
   margin: 0 auto;
@@ -24,8 +28,14 @@
 }
 
 .a-link {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  white-space: nowrap;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 500;
   opacity: 0.7;
 }
 .a-link a {
@@ -61,4 +71,218 @@
   padding: 0.6rem 1.5rem 0.6rem 1.5rem;
   border-radius: 5px;
   white-space: nowrap;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.section01 {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.img {
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 40px;
+  padding-top: 1rem;
+}
+.main h2 {
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff0ca2, #ff8949);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 1rem;
+  display: inline-block;
+}
+.main p {
+  opacity: 0.8;
+  font-size: 16px;
+  padding-top: 1rem;
+  color: rgb(107, 114, 128);
+}
+.main h4 {
+  padding-top: 0.5rem;
+  color: rgb(107, 114, 128);
+  opacity: 0.6;
+  padding-top: 0.8;
+  font-weight: 700;
+  font-size: 15px;
+}
+.main #p {
+  padding-top: 1.2rem;
+}
+
+.p-btn {
+  display: flex;
+  gap: 0.5rem;
+  cursor: default;
+  white-space: nowrap;
+}
+.p-btn p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #4338ca;
+  background: #e0e7ff;
+  align-items: center;
+  border-radius: 25px;
+  padding: 2px 8px 2px 8px;
+  opacity: 0.9;
+}
+
+.sec-btn {
+  padding-top: 1.5rem;
+}
+.sec-btn h5 {
+  padding-top: 0.5rem;
+  font-size: 15px;
+  color: gray;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.sec-btn button {
+  background-image: linear-gradient(324deg, #a000ff, #ff006f);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section02 {
+  max-width: 720px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section02:hover {
+  box-shadow: 0 2px 4x 0 rgba(0, 0, 0, 0.2);
+}
+
+.p-h1 p {
+  font-size: 14px;
+  text-align: center;
+}
+.p-h1 h1 {
+  text-align: center;
+}
+
+.svg {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.player-button {
+  align-items: center;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  font-size: 1.5rem;
+  padding: 10px;
+  background: #b1b2f8;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: no-drop;
+}
+
+.animate-btn {
+  align-items: center;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.animate-btn {
+  background-image: linear-gradient(324deg, #a000ff, #ff006f);
+  outline: none;
+  border: none;
+  animation: gradientAnimation 1s ease-in-out infinite, beat 1s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.scn-btn {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.scn-btn button {
+  background: #a39eed;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: no-drop;
+}
+
+.sp-image {
+  padding-top: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.down-arro {
+  margin-top: 5rem;
+  font-size: 60px;
+  text-align: center;
+  opacity: 0.2;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }/*# sourceMappingURL=style.css.map */
