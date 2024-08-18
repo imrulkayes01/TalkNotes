@@ -484,6 +484,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   align-items: center;
+  padding-bottom: 2rem;
 }
 .para-tex {
   font-size: 15px;
@@ -505,4 +506,127 @@
   align-items: center;
   font-size: 17px;
   gap: 0.3rem;
+}
+//
+.video-para {
+  padding-top: 6rem;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+.max-w {
+  max-width: 380px;
+  margin: 0 auto;
+  align-items: center;
+  .text-h3 {
+    font-size: 22px;
+  }
+  .para-p {
+    padding-top: 0.8rem;
+    font-size: 17px;
+    opacity: 0.6;
+    line-height: 1.5;
+  }
+}
+//
+.video2 video {
+  border-radius: 10px;
+}
+//
+.ss-bton {
+  text-align: center;
+  padding-top: 3rem;
+}
+.ss-bton button {
+  background-image: linear-gradient(324deg, #a000ff, #ff006f);
+  border: none;
+  width: 35%;
+  padding: 8px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+}
+//
+.sec5 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+.sec5 {
+  padding-top: 4rem;
+  h2 {
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    opacity: 0.5;
+  }
+  h1 {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 35px;
+    white-space: nowrap;
+  }
+}
+//
+.img-three {
+  padding-top: 4rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.cd1 {
+  width: 280px;
+  height: auto;
+  align-items: center;
+  h4 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 13px;
+    padding-top: 0.2rem;
+    opacity: 0.6;
+  }
+}
+//
+.ss1-bton {
+  padding-top: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.ss1-bton button {
+  background-image: linear-gradient(324deg, #a000ff, #ff006f);
+  border: none;
+  width: 35%;
+  padding: 8px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+}
+//
+.img-para2 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+#image2 img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.text-gray2 {
+  opacity: 0.5;
 }
