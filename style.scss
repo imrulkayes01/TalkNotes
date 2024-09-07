@@ -21,6 +21,11 @@
   padding: 1rem;
   padding-top: 1rem;
 }
+@media only screen and (max-width: 620px) {
+  .nav {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .logo {
   align-items: center;
   justify-content: center;
@@ -45,11 +50,11 @@
   color: #6c6ff2;
   transform: 2s;
 }
-// @media only screen and (max-width: 1023px) {
-//   .a-link {
-//     display: none;
-//   }
-// }
+@media only screen and (max-width: 1023px) {
+  .a-link {
+    display: none;
+  }
+}
 .btn {
   display: flex;
   gap: 1rem;
@@ -77,17 +82,27 @@
 }
 // section two
 .main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   padding: 1rem;
 }
-.section01 {
-  max-width: 480px;
-  margin: 0 auto;
+@media only screen and (max-width: 620px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
+@media only screen and (max-width: 620px) {
+  .main {
+    padding: 0;
+    width: 90%;
+    justify-content: center;
+  }
+}
+
 .img {
   text-align: center;
 }
@@ -95,7 +110,14 @@
   h1 {
     font-size: 40px;
     padding-top: 1rem;
+    @media only screen and (max-width: 620px) {
+      font-size: 35px;
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
   }
+
   h2 {
     font-size: 26px;
     font-weight: bold;
@@ -104,12 +126,23 @@
     color: transparent;
     padding-top: 1rem;
     display: inline-block;
+    @media only screen and (max-width: 620px) {
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
   }
   p {
     opacity: 0.8;
     font-size: 16px;
     padding-top: 1rem;
     color: rgb(107 114 128);
+    @media only screen and (max-width: 620px) {
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
   }
   h4 {
     padding-top: 0.5rem;
@@ -118,9 +151,16 @@
     padding-top: 0.8;
     font-weight: 700;
     font-size: 15px;
+    @media only screen and (max-width: 620px) {
+      display: none;
+    }
   }
   #p {
     padding-top: 1.2rem;
+    @media only screen and (max-width: 620px) {
+      text-align: start;
+      width: 90%;
+    }
   }
 }
 .p-btn {
@@ -128,6 +168,9 @@
   gap: 0.5rem;
   cursor: default;
   white-space: nowrap;
+  @media only screen and (max-width: 620px) {
+    display: none;
+  }
   p {
     margin-top: 8px;
     font-size: 12px;
@@ -277,6 +320,10 @@
   text-align: center;
   opacity: 0.2;
   animation: bounce 1s infinite;
+  @media only screen and (max-width: 620px) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @keyframes bounce {
@@ -314,6 +361,9 @@
     padding-top: 2rem;
     font-size: 2.1rem;
     opacity: 0.8;
+    @media only screen and (max-width: 620px) {
+      opacity: 1;
+    }
   }
 }
 //
@@ -324,6 +374,10 @@
   padding: 1rem;
   padding-bottom: 2rem;
   gap: 3rem;
+  @media only screen and (max-width: 620px) {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .para-btn {
@@ -392,6 +446,9 @@
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 4rem;
+  @media only screen and (max-width: 620px) {
+    max-width: 100%;
+  }
 }
 //
 .hdn-para {
@@ -415,6 +472,9 @@
   padding-top: 3rem;
   gap: 2rem;
   padding-bottom: 2rem;
+  @media only screen and (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .fast-para h3 {
@@ -422,6 +482,9 @@
   margin: 0 auto;
   align-items: center;
   font-size: 20px;
+  @media only screen and (max-width: 620px) {
+    max-width: 90%;
+  }
 }
 .para_s {
   max-width: 300px;
@@ -430,12 +493,18 @@
   font-size: 15px;
   line-height: 1.5;
   opacity: 0.6;
+  @media only screen and (max-width: 620px) {
+    max-width: 90%;
+  }
 }
 //
 .s-bton {
   padding-bottom: 2rem;
   text-align: center;
   padding-top: 2rem;
+  @media only screen and (max-width: 620px) {
+    padding-top: 0;
+  }
 }
 .s-bton button {
   background-image: linear-gradient(324deg, #a000ff, #ff006f);
@@ -448,6 +517,9 @@
   border-radius: 5px;
   cursor: pointer;
   white-space: nowrap;
+  @media only screen and (max-width: 620px) {
+    width: 80%;
+  }
 }
 //section four
 #three {
@@ -475,6 +547,9 @@
     padding-top: 1.5rem;
     font-size: 17px;
     opacity: 0.6;
+    @media only screen and (max-width: 620px) {
+      padding-bottom: 1rem;
+    }
   }
 }
 //
@@ -485,6 +560,9 @@
   gap: 2rem;
   align-items: center;
   padding-bottom: 2rem;
+  @media only screen and (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
 }
 .para-tex {
   font-size: 15px;
@@ -499,6 +577,9 @@
   background: #ffffff;
   border: 1px solid gray;
   padding: 0.8rem;
+  @media only screen and (max-width: 620px) {
+    max-width: 90%;
+  }
 }
 
 .round02 {
@@ -508,11 +589,23 @@
   gap: 0.3rem;
 }
 //
+.video {
+  @media only screen and (max-width: 620px) {
+    display: none;
+  }
+}
 .video-para {
   padding-top: 6rem;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
+  @media only screen and (max-width: 620px) {
+    padding-top: 0;
+    padding-top: 2rem !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 .max-w {
   max-width: 380px;
@@ -536,6 +629,9 @@
 .ss-bton {
   text-align: center;
   padding-top: 3rem;
+  @media only screen and (max-width: 620px) {
+    padding-top: 2rem;
+  }
 }
 .ss-bton button {
   background-image: linear-gradient(324deg, #a000ff, #ff006f);
@@ -548,6 +644,9 @@
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
 }
 //
 .sec5 {
@@ -571,9 +670,13 @@
     padding-top: 1.5rem;
     font-size: 35px;
     white-space: nowrap;
+    @media only screen and (max-width: 620px) {
+      font-size: 20px;
+    }
   }
 }
 //
+
 .img-three {
   padding-top: 4rem;
   display: grid;
@@ -581,11 +684,23 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding-bottom: 2rem;
+  @media only screen and (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
 }
+
 .cd1 {
   width: 280px;
   height: auto;
   align-items: center;
+  @media only screen and (max-width: 620px) {
+    width: 420px;
+  }
+  img {
+    @media only screen and (max-width: 620px) {
+      width: 420px;
+    }
+  }
   h4 {
     font-size: 17px;
   }
@@ -612,6 +727,9 @@
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
 }
 //
 .img-para2 {
@@ -635,6 +753,9 @@
   background: #eef2ff;
   padding-bottom: 4rem;
   padding-top: 4rem;
+  @media only screen and (max-width: 620px) {
+    padding-top: 0;
+  }
 }
 #card-hp {
   max-width: 1000px;
@@ -653,6 +774,9 @@
     font-size: 35px;
     text-align: center;
     white-space: nowrap;
+    @media only screen and (max-width: 620px) {
+      font-size: 22px;
+    }
   }
 
   p {
@@ -675,6 +799,9 @@
   border-radius: 8px;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 620px) {
+    flex-direction: column;
+  }
 }
 
 .cd-one,
@@ -980,9 +1107,9 @@
   color: #ffffff;
 }
 
-.icon {
-  font-size: 24px;
-}
+// .icon {
+//   font-size: 24px;
+// }
 //
 #footer-links,
 .footer-column {
