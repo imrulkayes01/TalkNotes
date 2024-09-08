@@ -104,6 +104,9 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .main .section01 {
+    padding-bottom: 1.5rem;
+  }
 }
 @media only screen and (max-width: 620px) {
   .main {
@@ -261,7 +264,7 @@
   width: 90%;
   margin-top: 2rem;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -857,6 +860,13 @@
   max-width: 1000px;
   margin: 0 auto;
   width: 90%;
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 620px) {
+  #card-hp {
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
 }
 #card-hp h3 {
   text-align: center;
@@ -899,6 +909,7 @@
 @media only screen and (max-width: 620px) {
   #card {
     flex-direction: column;
+    padding-top: 2rem;
   }
 }
 
@@ -1042,6 +1053,11 @@
   max-width: 1000px;
   margin: 0 auto;
   width: 90%;
+}
+@media only screen and (max-width: 620px) {
+  #twoid {
+    padding-top: 2rem;
+  }
 }
 #twoid #img3 {
   padding-top: 1rem;
@@ -1241,6 +1257,7 @@
 .footer-column p {
   margin: 10px 0;
   color: #ffffff;
+  font-size: 14px;
   cursor: default;
   opacity: 0.7;
 }

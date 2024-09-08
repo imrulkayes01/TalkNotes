@@ -94,10 +94,14 @@
   margin-top: 2.5rem;
   padding: 1rem;
 }
+
 @media only screen and (max-width: 620px) {
   .main {
     display: grid;
     grid-template-columns: 1fr;
+    .section01 {
+      padding-bottom: 1.5rem;
+    }
   }
 }
 @media only screen and (max-width: 620px) {
@@ -245,7 +249,7 @@
   width: 90%;
   margin-top: 2rem;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 .player-button {
@@ -787,6 +791,11 @@
   max-width: 1000px;
   margin: 0 auto;
   width: 90%;
+  padding-bottom: 2rem;
+  @media only screen and (max-width: 620px) {
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
 
   h3 {
     text-align: center;
@@ -828,6 +837,7 @@
   justify-content: center;
   @media only screen and (max-width: 620px) {
     flex-direction: column;
+    padding-top: 2rem;
   }
 }
 
@@ -960,6 +970,9 @@
   max-width: 1000px;
   margin: 0 auto;
   width: 90%;
+  @media only screen and (max-width: 620px) {
+    padding-top: 2rem;
+  }
   #img3 {
     padding-top: 1rem;
     padding-left: 2rem;
@@ -1158,6 +1171,7 @@
 .footer-column p {
   margin: 10px 0;
   color: #ffffff;
+  font-size: 14px;
   cursor: default;
   opacity: 0.7;
 }
