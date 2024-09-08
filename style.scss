@@ -34,6 +34,7 @@
 .a-link {
   max-width: 600px;
   margin: 0 auto;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   white-space: nowrap;
@@ -65,6 +66,9 @@
     color: #4f46e5;
     border: none;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    @media only screen and (max-width: 1023px) {
+      display: none;
+    }
   }
   .fast-btn button:hover {
     background: #e0e7ff;
@@ -84,6 +88,7 @@
 .main {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 2.5rem;
@@ -98,7 +103,6 @@
 @media only screen and (max-width: 620px) {
   .main {
     padding: 0;
-    width: 90%;
     justify-content: center;
   }
 }
@@ -111,10 +115,8 @@
     font-size: 40px;
     padding-top: 1rem;
     @media only screen and (max-width: 620px) {
-      font-size: 35px;
+      font-size: 26px;
       text-align: center;
-      max-width: 400px;
-      margin: 0 auto;
     }
   }
 
@@ -140,7 +142,7 @@
     color: rgb(107 114 128);
     @media only screen and (max-width: 620px) {
       text-align: center;
-      max-width: 400px;
+      max-width: 315px;
       margin: 0 auto;
     }
   }
@@ -184,6 +186,9 @@
 }
 .sec-btn {
   padding-top: 1.5rem;
+  @media only screen and (max-width: 620px) {
+    text-align: center;
+  }
 
   h5 {
     padding-top: 0.5rem;
@@ -196,7 +201,7 @@
 .sec-btn button {
   background-image: linear-gradient(324deg, #a000ff, #ff006f);
   border: none;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   align-items: center;
   color: white;
@@ -213,6 +218,9 @@
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  @media only screen and (max-width: 620px) {
+    width: 350px;
+  }
   // img {
   //   border: 1px solid greenyellow;
   //   border-radius: 5px;
@@ -234,6 +242,7 @@
 .svg {
   max-width: 250px;
   margin: 0 auto;
+  width: 90%;
   margin-top: 2rem;
   display: flex;
   gap: 2rem;
@@ -310,6 +319,7 @@
   padding-top: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   text-align: center;
   align-items: center;
   opacity: 0.7;
@@ -348,6 +358,7 @@
 .sec-four {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
 }
 .para-h1 {
   text-align: center;
@@ -381,6 +392,9 @@
 }
 
 .para-btn {
+  @media only screen and (max-width: 620px) {
+    padding: 0.5rem;
+  }
   p {
     color: #4f46e5;
     font-size: 20px;
@@ -445,6 +459,7 @@
 .card-p {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   padding-bottom: 4rem;
   @media only screen and (max-width: 620px) {
     max-width: 100%;
@@ -463,6 +478,9 @@
     padding-top: 2rem;
     font-size: 2.1rem;
     opacity: 0.8;
+    @media only screen and (max-width: 620px) {
+      font-size: 30px;
+    }
   }
 }
 //
@@ -480,6 +498,7 @@
 .fast-para h3 {
   max-width: 300px;
   margin: 0 auto;
+  width: 90%;
   align-items: center;
   font-size: 20px;
   @media only screen and (max-width: 620px) {
@@ -489,6 +508,7 @@
 .para_s {
   max-width: 300px;
   margin: 0 auto;
+  width: 90%;
   padding-top: 0.5rem;
   font-size: 15px;
   line-height: 1.5;
@@ -518,7 +538,7 @@
   cursor: pointer;
   white-space: nowrap;
   @media only screen and (max-width: 620px) {
-    width: 80%;
+    width: 90%;
   }
 }
 //section four
@@ -528,6 +548,7 @@
 .three-stap {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -573,6 +594,7 @@
 .round01 {
   max-width: 250px;
   margin: 0 auto;
+  width: 90%;
   border-radius: 5px;
   background: #ffffff;
   border: 1px solid gray;
@@ -624,6 +646,8 @@
 //
 .video2 video {
   border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
 //
 .ss-bton {
@@ -652,6 +676,7 @@
 .sec5 {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   padding-bottom: 4rem;
 }
 .sec5 {
@@ -671,7 +696,7 @@
     font-size: 35px;
     white-space: nowrap;
     @media only screen and (max-width: 620px) {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 }
@@ -694,11 +719,11 @@
   height: auto;
   align-items: center;
   @media only screen and (max-width: 620px) {
-    width: 420px;
+    width: 100%;
   }
   img {
     @media only screen and (max-width: 620px) {
-      width: 420px;
+      width: 100%;
     }
   }
   h4 {
@@ -735,6 +760,7 @@
 .img-para2 {
   max-width: 600px;
   margin: 0 auto;
+
   padding-top: 4rem;
   display: flex;
   gap: 1rem;
@@ -760,6 +786,7 @@
 #card-hp {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
 
   h3 {
     text-align: center;
@@ -775,7 +802,7 @@
     text-align: center;
     white-space: nowrap;
     @media only screen and (max-width: 620px) {
-      font-size: 22px;
+      font-size: 16px;
     }
   }
 
@@ -793,9 +820,9 @@
 #card {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   display: flex;
   gap: 2rem;
-  padding: 2rem;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
@@ -811,6 +838,9 @@
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  @media only screen and (max-width: 620px) {
+    width: 100%;
+  }
 }
 
 .cd-one .one,
@@ -929,6 +959,7 @@
 #twoid {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   #img3 {
     padding-top: 1rem;
     padding-left: 2rem;
@@ -940,6 +971,7 @@
 .para-s {
   max-width: 1000px;
   margin: 0 auto;
+  width: 90%;
   padding-top: 4rem;
 }
 .ten-ph {
@@ -994,6 +1026,9 @@
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
 }
 #img-p {
   display: flex;
@@ -1018,6 +1053,7 @@
 .small-sec {
   max-width: 900px;
   margin: 0 auto;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
